@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .youtube-video {
+        display: block;
+        margin: 20px auto; /* centers horizontally */
+      }
+
+      footer {
+        margin-top: 100px;
+      }
+
+      /* Hide programming section by default */
+      #programmingProjects {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Projects</h1>
+
+      <p>This here is where I will upload my projects I've been working on and alluding to before. If it looks a little empty that's because I either haven't uploaded/finished a project yet to add to this page. Of course, I will also add my projects so you can see them on my Github and Artstation which I linked in my home page, and later on my Youtube.</p>
+      <p>Do not be surprised to see this webpage being continuously updated as I finish and upload more projects.</p>
+      <p>Down here is a link to my youtube channel whos name is Loom, and embedded below is my first Youtube video. It consists of 2 weeks of my animation practice. I hope to show my progress over time.</p>
+      <p>Also embedded below is a short 5 minute demonstration of a short project I wrote a while back in python of a Snake AI. It takes inspiration from the classic snake game, but instead the snake moves on it's own and lives in a simulated environment.</p>
+      <p>I wrote it as an idea to have a running animation of a worm that moves around and eats food. I am currently working on its documentation and will post both it and the source code to GitHub later.</p>
+
+
+      <button onclick="showAllProjects()">Show All</button>
+      <button onclick="showAnimationProjects()">Youtube Video</button>
+      <button onclick="showProgrammingProjects()">Programming</button>
+
+      <section class="project">
+        <figure class="media">
+  
+          <div id="animationProjects">
+            <iframe class="youtube-video" 
+                src="https://www.youtube.com/embed/jsvT4JYYpls" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+            <figcaption>
+              Youtube video that demonstrates my first youtube video of 2 weeks of animation practice.
+            </figcaption>
+          </div>
+
+       
+          <div id="programmingProjects">
+            <video class="youtube-video" controls>
+              <source src="snake_ai.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>
+              A Snake AI demonstration showing it moving around a simulated environment.
+            </figcaption>
+          </div>
+        </figure>
+      </section>
+
+      <footer>
+        <p id="links">
+          <a href="https://www.youtube.com/@ghostloomy4444"><strong>Youtube</strong></a>
+          <a href="programming_about_page.html"><strong>Home</strong></a>
+          <a href="about_page.html"><strong>About Me</strong></a>
+          <a href="contact.html"><strong>Contact</strong></a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

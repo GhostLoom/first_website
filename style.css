@@ -1,0 +1,47 @@
+#links {
+    background-color: lightblue;
+}
+img, video, iframe {
+  width: 500;
+  height: 300;
+  border-radius: 8px;
+}
+iframe { 
+  aspect-ratio: 16 / 9; 
+  border: 0; 
+}
+
+
+footer{
+        text-align: center;
+        margin-top: 550px;
+        margin-right: 20px;
+      }
+footer a {
+        margin: 20px;
+      }
+
+.media figcaption {
+  margin-top: 50px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;  /* sets a comfortable width on big screens */
+  margin: 0 auto;    /* centers content */
+  padding: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+#programmingProjects {
+  display: none;
+}
